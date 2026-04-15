@@ -1,7 +1,7 @@
 #### NIM : 103072400098
 #### Kelas : IF-04-04
+# SOAL 1
 # Pertanyaan
-## SOAL 1
 1. Cari pesan permintaan DNS dan balasannya. Apakah pesan tersebut dikirimkan melalui UDP 
 atau TCP? 
 2. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasannya? 
@@ -83,3 +83,48 @@ Hal ini karena:
 Alamat IP sudah diketahui dari hasil DNS sebelumnya
 Browser menyimpan cache DNS
 Gambar biasanya berada pada domain/server yang sama
+
+---
+---
+
+# SOAL 2
+
+# Pertanyaan
+## Perintah nslookup www.mit.edu
+1. Apa port tujuan pada pesan permintaan DNS? Apa port sumber pada pesan balasan DNS? 
+2. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut 
+merupakan default alamat IP server DNS lokal Anda? 
+3. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan 
+tersebut mengandung ”jawaban” atau ”answers”? 
+4. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di 
+dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut? 
+# Jawaban : 
+
+1. 
+<img width="858" height="489" alt="image" src="https://github.com/user-attachments/assets/db46ae1d-f396-4c8a-b65f-0706d1f0ecb4" />
+<img width="858" height="488" alt="image" src="https://github.com/user-attachments/assets/05d8524a-a864-4178-9b2f-451ceb37ea93" />
+Port tujuan pada pesan permintaan DNS adalah 53, karena DNS menggunakan port tersebut sebagai standar komunikasi. Sedangkan port sumber pada pesan balasan DNS juga 53, yang menandakan bahwa balasan berasal dari server DNS.
+
+---
+
+2. 
+<img width="862" height="492" alt="image" src="https://github.com/user-attachments/assets/84d7832b-33c4-4058-9414-8f59c96f1860" />
+<img width="859" height="505" alt="image" src="https://github.com/user-attachments/assets/976a572f-4e23-452d-b590-c36a03ecdb88" />
+Pesan permintaan DNS dikirimkan ke alamat IP 10.221.193.2. Alamat IP tersebut merupakan default DNS server lokal yang digunakan oleh perangkat saya, sehingga semua permintaan resolusi domain pertama kali dikirim ke server tersebut.
+
+---
+
+3.
+<img width="863" height="497" alt="image" src="https://github.com/user-attachments/assets/73fd1b86-8c74-42c0-b139-b8d4401746d0" />
+Jenis (type) dari pesan permintaan DNS adalah AAAA, yang berarti permintaan ditujukan untuk memperoleh alamat IPv6 dari suatu domain. Pesan permintaan ini tidak mengandung jawaban (answers) karena hanya berfungsi sebagai query atau permintaan ke server DNS.
+
+---
+
+4.
+<img width="860" height="483" alt="image" src="https://github.com/user-attachments/assets/63b9d1aa-b609-4bce-a99c-59ec5c93bf10" />
+Pada pesan balasan DNS, terdapat 4 jawaban (answers). Setiap jawaban berisi informasi sebagai berikut:
+
+1. Nama domain yang diminta
+2. Tipe record (AAAA)
+3. Alamat IP versi 6 (IPv6) dari domain tersebut
+4. TTL (Time To Live) yang menunjukkan lama data dapat disimpan dalam cache
