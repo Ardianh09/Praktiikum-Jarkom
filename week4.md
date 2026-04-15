@@ -41,7 +41,7 @@ Port 53 merupakan port standar yang digunakan oleh layanan DNS baik untuk permin
 
 3. 
 <img width="1273" height="727" alt="image" src="https://github.com/user-attachments/assets/6cb8dd9a-662f-4198-b4b7-b391c799b192" />
-<img width="1276" height="583" alt="image" src="https://github.com/user-attachments/assets/217a8943-58ba-4726-b167-159db3ab0432" />
+<img width="1508" height="688" alt="ss" src="https://github.com/user-attachments/assets/c8b46c0e-d6a7-40dc-ac91-ce8bb7691fbd" />
 Alamat IP tujuan dan DNS lokal
 Alamat IP tujuan pada pesan permintaan DNS adalah alamat IP server DNS (biasanya DNS lokal dari ISP atau jaringan).
 Alamat IP DNS lokal dapat dilihat menggunakan perintah ipconfig pada komputer.
