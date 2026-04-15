@@ -1,3 +1,4 @@
+#### NAMA : ARDIAN HOART
 #### NIM : 103072400098
 #### Kelas : IF-04-04
 # SOAL 1
@@ -123,8 +124,74 @@ Jenis (type) dari pesan permintaan DNS adalah AAAA, yang berarti permintaan ditu
 4.
 <img width="860" height="483" alt="image" src="https://github.com/user-attachments/assets/63b9d1aa-b609-4bce-a99c-59ec5c93bf10" />
 Pada pesan balasan DNS, terdapat 4 jawaban (answers). Setiap jawaban berisi informasi sebagai berikut:
-
 1. Nama domain yang diminta
 2. Tipe record (AAAA)
 3. Alamat IP versi 6 (IPv6) dari domain tersebut
 4. TTL (Time To Live) yang menunjukkan lama data dapat disimpan dalam cache
+
+---
+---
+
+# SOAL 3
+
+# Pertanyaan
+
+Perintah nslookup –type=NS mit.edu
+1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut merupakan default alamat IP server DNS lokal Anda?
+2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan tersebut mengandung ”jawaban” atau ”answers”?
+3. Periksa pesan balasan DNS. Apa nama server MIT yang diberikan oleh pesan balasan? Apakah pesan balasan ini juga memberikan alamat IP untuk server MIT tersebut?
+# Jawaban :
+
+1.
+<img width="859" height="480" alt="image" src="https://github.com/user-attachments/assets/3a52f545-9e22-41a5-b3eb-63440f804a6c" />
+<img width="862" height="389" alt="image" src="https://github.com/user-attachments/assets/e777dd0a-d126-4671-83cb-a0bf123a9f49" />
+Pesan permintaan DNS dikirimkan ke alamat IP 10.221.193.2, yang merupakan default DNS server lokal pada perangkat saya. Hal ini menunjukkan bahwa setiap permintaan resolusi domain pertama kali diproses oleh server DNS lokal sebelum diteruskan ke server lain jika diperlukan.
+
+---
+
+2.
+<img width="859" height="491" alt="image" src="https://github.com/user-attachments/assets/90316ab3-e080-4ad3-947e-af3b85ca689b" />
+Jenis (type) dari pesan permintaan DNS adalah A, yang berarti permintaan ditujukan untuk mendapatkan alamat IPv4 dari suatu domain. Pada pesan permintaan ini tidak terdapat jawaban (answers) karena pesan tersebut hanya berupa query (permintaan) ke server DNS.
+
+---
+
+3.
+<img width="863" height="488" alt="image" src="https://github.com/user-attachments/assets/695e3ca8-42ed-4b79-8726-19b9ed9ca9af" />
+Pada pesan balasan DNS, terdapat informasi mengenai nama server MIT, yaitu mit.edu (atau subdomain terkait seperti www.mit.edu
+). Selain itu, pesan balasan ini juga memberikan alamat IP (IPv4) untuk server MIT tersebut, sehingga client dapat langsung mengakses server yang dimaksud menggunakan alamat IP yang diberikan.
+
+---
+---
+
+# SOAL 4
+
+# Pertanyaan
+## Perintah nslookup www.aiit.or.kr bitsy.mit.edu
+1. Ke alamat IP manakah pesan permintaan DNS dikirimkan? Apakah alamat IP tersebut 
+merupakan default alamat IP server DNS lokal Anda? 
+2. Periksa pesan permintaan DNS. Apa ”jenis” atau ”type” dari pesan tersebut? Apakah pesan 
+tersebut mengandung ”jawaban” atau ”answers”? 
+3. Periksa pesan balasan DNS. Berapa banyak ”jawaban” atau “answers” yang terdapat di 
+dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
+# Jawaban :
+1. 
+<img width="862" height="488" alt="image" src="https://github.com/user-attachments/assets/ff6c11b6-43d4-431e-b236-aa8f7b0b3f64" />
+<img width="863" height="480" alt="image" src="https://github.com/user-attachments/assets/81b94f11-d80a-4d0d-a490-77e23e8ead81" />
+Pesan permintaan DNS dikirimkan ke alamat IP 10.221.193.2, yang merupakan default DNS server lokal pada perangkat saya. Hal ini menunjukkan bahwa proses resolusi domain dilakukan melalui server DNS lokal terlebih dahulu sebelum mengakses server DNS lain di internet.
+
+---
+
+2.
+<img width="864" height="488" alt="image" src="https://github.com/user-attachments/assets/5e6140de-4147-46e4-835b-d8993a054c09" />
+Jenis (type) dari pesan permintaan DNS adalah A, yang berarti permintaan bertujuan untuk memperoleh alamat IPv4 dari domain yang diminta. Pada pesan permintaan ini tidak terdapat jawaban (answers) karena hanya berupa query yang dikirim oleh client ke server DNS.
+
+---
+
+3.
+<img width="856" height="484" alt="image" src="https://github.com/user-attachments/assets/47e6314a-f2eb-4f61-8ff7-c0dad27b6a2b" />
+Pada pesan balasan DNS, terdapat 1 jawaban (answer). Jawaban tersebut berisi informasi:
+Nama domain yang diminta (misalnya www.aiit.or.kr
+ atau bitsy.mit.edu)
+Tipe record (A)
+Alamat IP (IPv4) dari domain tersebut
+TTL (Time To Live) sebagai informasi masa berlaku cache
